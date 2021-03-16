@@ -28,11 +28,11 @@ There are 4 outputs built into the controller. These are level shifted to 5V and
 
 The 4 outputs mentioned above are also wired to a standard CNC output module socket. This allows the use of many specialized modules, like RS485, 0-10V, Relays, High current MOSFETs, etc. This gives a lot of flexibility to this controller. Supoort modules inclue
 
-- RS485 Modbus module for VFD spindles
-- 0-10V spindle module
-- Quad MOSFET module
-- Relay module
-- RC servo and BESC motor module
+- [RS485 Modbus module for VFD spindles](https://github.com/bdring/6-Pack_CNC_Controller/wiki/RS485-Modbus-Module)
+- [0-10V spindle module](https://github.com/bdring/6-Pack_CNC_Controller/wiki/0-10V-Output-Module)
+- [Quad MOSFET module](https://github.com/bdring/6-Pack_CNC_Controller/wiki/Quad-MOSFET-Module)
+- [Relay module](https://github.com/bdring/6-Pack_CNC_Controller/wiki/Relay-Module)
+- [RC servo and BESC motor module](https://github.com/bdring/6-Pack_CNC_Controller/wiki/RC-Servo-BESC-CNC-I-O-Module)
 
 ### Micro SD Card
 
