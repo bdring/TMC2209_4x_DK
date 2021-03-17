@@ -47,5 +47,4 @@ There is a an extra connector that simply outputs the main power on a 2 terminal
 There is a pluggable terminal block for the input voltage. This is limited to 12V on version 2.0. Future versions will support 12V-24V.
 
 
-
- 
+[<img src="https://github.com/bdring/TMC2209_4x_DK/blob/main/images/tindie-logo.png" width="160">](https://www.tindie.com/products/33366583/tmc2209-4-axis-grbl_esp32-cnc-controller/)
