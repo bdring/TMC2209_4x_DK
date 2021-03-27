@@ -26,7 +26,9 @@ There are 4 outputs built into the controller. These are level shifted to 5V and
 
 ### CNC Output Modules.
 
-The 4 outputs mentioned above are also wired to a standard CNC output module socket. This allows the use of many specialized modules, like RS485, 0-10V, Relays, High current MOSFETs, etc. This gives a lot of flexibility to this controller. Supoort modules inclue
+The 4 outputs mentioned above are also wired to a standard CNC output module socket. This allows the use of many specialized modules, like RS485, 0-10V, Relays, High current MOSFETs, etc. This gives a lot of flexibility to this controller. Since the I/O for the modules is also wired to the built in outputs, you cannot use them independtly. 
+
+Supported modules.
 
 - [RS485 Modbus module for VFD spindles](https://github.com/bdring/6-Pack_CNC_Controller/wiki/RS485-Modbus-Module)
 - [0-10V spindle module](https://github.com/bdring/6-Pack_CNC_Controller/wiki/0-10V-Output-Module)
@@ -47,5 +49,4 @@ There is a an extra connector that simply outputs the main power on a 2 terminal
 There is a pluggable terminal block for the input voltage. This is limited to 12V on version 2.0. Future versions will support 12V-24V.
 
 
-
- 
+[<img src="https://github.com/bdring/TMC2209_4x_DK/blob/main/images/tindie-logo.png" width="160">](https://www.tindie.com/products/33366583/tmc2209-4-axis-grbl_esp32-cnc-controller/)
