@@ -3,7 +3,6 @@
 
 /*
     TMC2209_4x.h
-    https://github.com/FYSETC/FYSETC-E4
 
     2020-12-29 B. Dring
 
