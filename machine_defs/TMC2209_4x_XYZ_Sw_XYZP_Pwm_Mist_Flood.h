@@ -72,7 +72,7 @@
 // https://github.com/bdring/6-Pack_CNC_Controller/wiki/0-10V-Output-Module
 #define SPINDLE_TYPE            SpindleType::PWM// default, check actual $Spindle/Type Setting
 #define SPINDLE_OUTPUT_PIN      GPIO_NUM_12
-#define SPINDLE_ENABLE_PIN      GPIO_NUM_12
+#define SPINDLE_ENABLE_PIN      GPIO_NUM_4
 #define COOLANT_MIST_PIN        GPIO_NUM_13
 #define COOLANT_FLOOD_PIN       GPIO_NUM_17
 
