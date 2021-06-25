@@ -3,6 +3,7 @@
 
 /*
     TMC2209_4x.h
+    https://github.com/FYSETC/FYSETC-E4
 
     2020-12-29 B. Dring
 
@@ -31,7 +32,7 @@
 #define N_AXIS 4
 
 #define TRINAMIC_UART_RUN_MODE       TrinamicUartMode :: StealthChop
-#define TRINAMIC_UART_HOMING_MODE    TrinamicUartMode :: StealthChop
+#define TRINAMIC_UART_HOMING_MODE    TrinamicUartMode :: StallGuard
 
 #define TMC_UART                UART_NUM_1
 #define TMC_UART_RX             GPIO_NUM_21
@@ -74,12 +75,12 @@
 #define STEPPERS_DISABLE_PIN    GPIO_NUM_25
 
 
-// https://github.com/bdring/6-Pack_CNC_Controller/wiki/4x-5V-Buffered-Output-Module
-// https://github.com/bdring/6-Pack_CNC_Controller/wiki/Quad-MOSFET-Module
-#define USER_DIGITAL_PIN_0      GPIO_NUM_4 //  M62 M63
-#define USER_DIGITAL_PIN_1      GPIO_NUM_13 //  M62 M63
-#define USER_DIGITAL_PIN_2      GPIO_NUM_17 //  M62 M63
-#define USER_DIGITAL_PIN_3      GPIO_NUM_12 //  M62 M63
+// Example using on board outputs
+#define SPINDLE_TYPE            SpindleType::PWM
+#define SPINDLE_OUTPUT_PIN      GPIO_NUM_4
+#define SPINDLE_ENABLE_PIN      GPIO_NUM_13 
+#define COOLANT_MIST_PIN        GPIO_NUM_17 
+#define COOLANT_FLOOD_PIN       GPIO_NUM_12
 
 
 // ===================== defaults ======================
