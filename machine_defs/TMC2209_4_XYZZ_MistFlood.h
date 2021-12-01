@@ -2,10 +2,9 @@
 // clang-format off
 
 /*
-    TMC2209_4x.h
-    https://github.com/FYSETC/FYSETC-E4
+    TMC2209_4_XYZZ_MistFlood.h
 
-    2020-12-29 B. Dring
+    2020-10-25 B. Dring for Kent Deemter
 
     This is a machine definition file to use the FYSTEC E4 3D Printer controller
     This is a 4 motor controller. This is setup for XYZA, but XYYZ, could also be used.
@@ -27,12 +26,12 @@
     along with Grbl_ESP32.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#define MACHINE_NAME            "TMC2209 4x Controller"
+#define MACHINE_NAME            "TMC2209 4x XYZZ"
 
-#define N_AXIS 4
+#define N_AXIS 3
 
 #define TRINAMIC_UART_RUN_MODE       TrinamicUartMode :: StealthChop
-#define TRINAMIC_UART_HOMING_MODE    TrinamicUartMode :: StallGuard
+#define TRINAMIC_UART_HOMING_MODE    TrinamicUartMode :: StealthChop
 
 #define TMC_UART                UART_NUM_1
 #define TMC_UART_RX             GPIO_NUM_21
@@ -59,29 +58,25 @@
 #define Z_DRIVER_ADDRESS        2
 #define DEFAULT_Z_MICROSTEPS    16
 
-#define A_TRINAMIC_DRIVER       2209
-#define A_STEP_PIN              GPIO_NUM_16
-#define A_DIRECTION_PIN         GPIO_NUM_15
-#define A_RSENSE                TMC2209_RSENSE_DEFAULT
-#define A_DRIVER_ADDRESS        3
-#define DEFAULT_A_MICROSTEPS    16
+#define Z2_TRINAMIC_DRIVER       2209
+#define Z2_STEP_PIN              GPIO_NUM_16
+#define Z2_DIRECTION_PIN         GPIO_NUM_15
+#define Z2_RSENSE                TMC2209_RSENSE_DEFAULT
+#define Z2_DRIVER_ADDRESS        3
+#define DEFAULT_Z2_MICROSTEPS    16
 
 #define X_LIMIT_PIN             GPIO_NUM_35
 #define Y_LIMIT_PIN             GPIO_NUM_34
 #define Z_LIMIT_PIN             GPIO_NUM_39
-#define PROBE_PIN               GPIO_NUM_36
+#define Z2_LIMIT_SWITCH         GPIO_NUM_36
 
 // OK to comment out to use pin for other features
 #define STEPPERS_DISABLE_PIN    GPIO_NUM_25
 
-
-// Built in I/O
-#define SPINDLE_TYPE                SpindleType::PWM
-#define SPINDLE_OUTPUT_PIN          GPIO_NUM_4   
-#define SPINDLE_ENABLE_PIN          GPIO_NUM_13  
-#define COOLANT_MIST_PIN            GPIO_NUM_17  // M7 on M9 Off
-#define COOLANT_FLOOD_PIN           GPIO_NUM_12  // M8 on M9 off
-
+#define COOLANT_MIST_PIN        GPIO_NUM_12
+#define COOLANT_FLOOD_PIN       GPIO_NUM_4
+#define USER_DIGITAL_PIN_0      GPIO_NUM_13
+#define USER_DIGITAL_PIN_1      GPIO_NUM_17
 
 // ===================== defaults ======================
 // https://github.com/bdring/Grbl_Esp32/wiki/Setting-Defaults

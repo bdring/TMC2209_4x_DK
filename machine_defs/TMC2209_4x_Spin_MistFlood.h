@@ -2,10 +2,10 @@
 // clang-format off
 
 /*
-    TMC2209_4x.h
+    TMC2209_4x_SpinMistFlood.h
     https://github.com/FYSETC/FYSETC-E4
 
-    2020-12-29 B. Dring
+    2021-10-12 B. Dring for Jeffrey Ray
 
     This is a machine definition file to use the FYSTEC E4 3D Printer controller
     This is a 4 motor controller. This is setup for XYZA, but XYYZ, could also be used.
